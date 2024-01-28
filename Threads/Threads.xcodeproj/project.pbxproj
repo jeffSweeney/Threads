@@ -12,6 +12,7 @@
 		E0707B8A2B66C97C009CC347 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0707B892B66C97C009CC347 /* Assets.xcassets */; };
 		E0707B8D2B66C97C009CC347 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0707B8C2B66C97C009CC347 /* Preview Assets.xcassets */; };
 		E0707B9D2B66E66B009CC347 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0707B9C2B66E66B009CC347 /* Login.swift */; };
+		E0707B9F2B67198F009CC347 /* ThreadsTFViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0707B9E2B67198F009CC347 /* ThreadsTFViewModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		E0707B892B66C97C009CC347 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E0707B8C2B66C97C009CC347 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E0707B9C2B66E66B009CC347 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		E0707B9E2B67198F009CC347 /* ThreadsTFViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadsTFViewModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +61,6 @@
 				E0707B952B66E5F4009CC347 /* Models */,
 				E0707B942B66E5F1009CC347 /* Services */,
 				E0707B932B66E5E8009CC347 /* Utils */,
-				E0707B852B66C97B009CC347 /* ThreadsApp.swift */,
 				E0707B892B66C97C009CC347 /* Assets.xcassets */,
 				E0707B8B2B66C97C009CC347 /* Preview Content */,
 			);
@@ -77,6 +78,7 @@
 		E0707B932B66E5E8009CC347 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				E0707B9E2B67198F009CC347 /* ThreadsTFViewModifier.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -114,6 +116,7 @@
 		E0707B982B66E5FA009CC347 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				E0707B852B66C97B009CC347 /* ThreadsApp.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -213,6 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E0707B9D2B66E66B009CC347 /* Login.swift in Sources */,
+				E0707B9F2B67198F009CC347 /* ThreadsTFViewModifier.swift in Sources */,
 				E0707B882B66C97B009CC347 /* ContentView.swift in Sources */,
 				E0707B862B66C97B009CC347 /* ThreadsApp.swift in Sources */,
 			);
