@@ -13,6 +13,10 @@
 		E0707B8D2B66C97C009CC347 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0707B8C2B66C97C009CC347 /* Preview Assets.xcassets */; };
 		E0707B9D2B66E66B009CC347 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0707B9C2B66E66B009CC347 /* LoginView.swift */; };
 		E0707B9F2B67198F009CC347 /* ThreadsTFViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0707B9E2B67198F009CC347 /* ThreadsTFViewModifier.swift */; };
+		E0707BA12B671B15009CC347 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0707BA02B671B15009CC347 /* RegistrationView.swift */; };
+		E0707BA42B671BDE009CC347 /* AppIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0707BA32B671BDE009CC347 /* AppIconView.swift */; };
+		E0707BA62B671C36009CC347 /* ActionButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0707BA52B671C36009CC347 /* ActionButtonView.swift */; };
+		E0707BA82B671D08009CC347 /* FooterLinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0707BA72B671D08009CC347 /* FooterLinkView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +27,10 @@
 		E0707B8C2B66C97C009CC347 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E0707B9C2B66E66B009CC347 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		E0707B9E2B67198F009CC347 /* ThreadsTFViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadsTFViewModifier.swift; sourceTree = "<group>"; };
+		E0707BA02B671B15009CC347 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+		E0707BA32B671BDE009CC347 /* AppIconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIconView.swift; sourceTree = "<group>"; };
+		E0707BA52B671C36009CC347 /* ActionButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButtonView.swift; sourceTree = "<group>"; };
+		E0707BA72B671D08009CC347 /* FooterLinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterLinkView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,9 +148,21 @@
 		E0707B9B2B66E65A009CC347 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E0707BA22B671BC2009CC347 /* Subviews */,
 				E0707B9C2B66E66B009CC347 /* LoginView.swift */,
+				E0707BA02B671B15009CC347 /* RegistrationView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		E0707BA22B671BC2009CC347 /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				E0707BA52B671C36009CC347 /* ActionButtonView.swift */,
+				E0707BA32B671BDE009CC347 /* AppIconView.swift */,
+				E0707BA72B671D08009CC347 /* FooterLinkView.swift */,
+			);
+			path = Subviews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,10 +235,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0707BA82B671D08009CC347 /* FooterLinkView.swift in Sources */,
 				E0707B9D2B66E66B009CC347 /* LoginView.swift in Sources */,
+				E0707BA62B671C36009CC347 /* ActionButtonView.swift in Sources */,
 				E0707B9F2B67198F009CC347 /* ThreadsTFViewModifier.swift in Sources */,
+				E0707BA42B671BDE009CC347 /* AppIconView.swift in Sources */,
 				E0707B882B66C97B009CC347 /* ContentView.swift in Sources */,
 				E0707B862B66C97B009CC347 /* ThreadsApp.swift in Sources */,
+				E0707BA12B671B15009CC347 /* RegistrationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

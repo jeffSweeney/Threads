@@ -16,11 +16,7 @@ struct LoginView: View {
             VStack {
                 Spacer()
                 
-                Image("threads-app-icon")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 120, height: 120)
-                    .padding()
+                AppIconView()
                 
                 VStack {
                     TextField("Enter your email", text: $email)
@@ -47,13 +43,7 @@ struct LoginView: View {
                 Button(action: {
                     
                 }, label: {
-                    Text("Login")
-                        .font(.subheadline)
-                        .fontWeight(.semibold)
-                        .foregroundStyle(.white)
-                        .frame(width: 352, height: 44)
-                        .background(.black)
-                        .clipShape(RoundedRectangle(cornerRadius: 8))
+                    ActionButtonView(action: .login)
                 })
                 
                 
@@ -64,15 +54,7 @@ struct LoginView: View {
                 NavigationLink {
                     Text("Registration <TODO: VIEW>")
                 } label: {
-                    HStack(spacing: 4) {
-                        Text("Don't have an account?")
-                        
-                        Text("Sign Up")
-                            .fontWeight(.semibold)
-                    }
-                    .font(.footnote)
-                    .foregroundStyle(.black)
-                    .padding(.vertical, 16)
+                    FooterLinkView(action: .signUp)
                 }
             }
         }
