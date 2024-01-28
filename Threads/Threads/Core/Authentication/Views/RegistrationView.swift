@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct RegistrationView: View {
+    @Environment(\.dismiss) var dismiss
+    
     @State private var email = ""
     @State private var password = ""
     @State private var fullname = ""
@@ -45,7 +47,7 @@ struct RegistrationView: View {
             Divider()
             
             Button(action: {
-                
+                dismiss()
             }, label: {
                 FooterLinkView(action: .signIn)
             })

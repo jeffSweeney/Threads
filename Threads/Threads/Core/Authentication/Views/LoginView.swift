@@ -52,7 +52,8 @@ struct LoginView: View {
                 Divider()
                 
                 NavigationLink {
-                    Text("Registration <TODO: VIEW>")
+                    RegistrationView()
+                        .navigationBarBackButtonHidden()
                 } label: {
                     FooterLinkView(action: .signUp)
                 }
