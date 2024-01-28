@@ -44,7 +44,11 @@ struct RegistrationView: View {
             
             Divider()
             
-            FooterLinkView(action: .signIn)
+            Button(action: {
+                
+            }, label: {
+                FooterLinkView(action: .signIn)
+            })
         }
     }
 }
