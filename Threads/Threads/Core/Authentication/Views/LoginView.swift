@@ -1,5 +1,5 @@
 //
-//  Login.swift
+//  LoginView.swift
 //  Threads
 //
 //  Created by Jeffrey Sweeney on 1/28/24.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct Login: View {
+struct LoginView: View {
     @State private var email = ""
     @State private var password = ""
     
@@ -80,5 +80,5 @@ struct Login: View {
 }
 
 #Preview {
-    Login()
+    LoginView()
 }
