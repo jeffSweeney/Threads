@@ -23,6 +23,7 @@
 		E0707BB72B673760009CC347 /* CreateThreadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0707BB62B673760009CC347 /* CreateThreadView.swift */; };
 		E0707BBC2B6737C2009CC347 /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0707BBB2B6737C2009CC347 /* ActivityView.swift */; };
 		E0707BC02B6737E3009CC347 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0707BBF2B6737E3009CC347 /* ProfileView.swift */; };
+		E0707BC22B67DD94009CC347 /* ThreadCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0707BC12B67DD94009CC347 /* ThreadCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 		E0707BB62B673760009CC347 /* CreateThreadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateThreadView.swift; sourceTree = "<group>"; };
 		E0707BBB2B6737C2009CC347 /* ActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityView.swift; sourceTree = "<group>"; };
 		E0707BBF2B6737E3009CC347 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		E0707BC12B67DD94009CC347 /* ThreadCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -203,6 +205,7 @@
 			isa = PBXGroup;
 			children = (
 				E0707BAE2B67371B009CC347 /* FeedView.swift */,
+				E0707BC12B67DD94009CC347 /* ThreadCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -361,6 +364,7 @@
 				E0707BAB2B673541009CC347 /* ThreadsTabView.swift in Sources */,
 				E0707B882B66C97B009CC347 /* ContentView.swift in Sources */,
 				E0707B862B66C97B009CC347 /* ThreadsApp.swift in Sources */,
+				E0707BC22B67DD94009CC347 /* ThreadCell.swift in Sources */,
 				E0707BC02B6737E3009CC347 /* ProfileView.swift in Sources */,
 				E0707BA12B671B15009CC347 /* RegistrationView.swift in Sources */,
 			);
