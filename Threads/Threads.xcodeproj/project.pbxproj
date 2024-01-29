@@ -17,6 +17,12 @@
 		E0707BA42B671BDE009CC347 /* AppIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0707BA32B671BDE009CC347 /* AppIconView.swift */; };
 		E0707BA62B671C36009CC347 /* ActionButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0707BA52B671C36009CC347 /* ActionButtonView.swift */; };
 		E0707BA82B671D08009CC347 /* FooterLinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0707BA72B671D08009CC347 /* FooterLinkView.swift */; };
+		E0707BAB2B673541009CC347 /* ThreadsTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0707BAA2B673541009CC347 /* ThreadsTabView.swift */; };
+		E0707BAF2B67371B009CC347 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0707BAE2B67371B009CC347 /* FeedView.swift */; };
+		E0707BB32B67373F009CC347 /* ExploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0707BB22B67373F009CC347 /* ExploreView.swift */; };
+		E0707BB72B673760009CC347 /* CreateThreadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0707BB62B673760009CC347 /* CreateThreadView.swift */; };
+		E0707BBC2B6737C2009CC347 /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0707BBB2B6737C2009CC347 /* ActivityView.swift */; };
+		E0707BC02B6737E3009CC347 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0707BBF2B6737E3009CC347 /* ProfileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +37,12 @@
 		E0707BA32B671BDE009CC347 /* AppIconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIconView.swift; sourceTree = "<group>"; };
 		E0707BA52B671C36009CC347 /* ActionButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButtonView.swift; sourceTree = "<group>"; };
 		E0707BA72B671D08009CC347 /* FooterLinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterLinkView.swift; sourceTree = "<group>"; };
+		E0707BAA2B673541009CC347 /* ThreadsTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadsTabView.swift; sourceTree = "<group>"; };
+		E0707BAE2B67371B009CC347 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
+		E0707BB22B67373F009CC347 /* ExploreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreView.swift; sourceTree = "<group>"; };
+		E0707BB62B673760009CC347 /* CreateThreadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateThreadView.swift; sourceTree = "<group>"; };
+		E0707BBB2B6737C2009CC347 /* ActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityView.swift; sourceTree = "<group>"; };
+		E0707BBF2B6737E3009CC347 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,8 +127,14 @@
 		E0707B972B66E5F8009CC347 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				E0707BB82B67377C009CC347 /* Activity */,
 				E0707B992B66E62F009CC347 /* Authentication */,
+				E0707BB02B673734009CC347 /* Explore */,
+				E0707BAC2B67370D009CC347 /* Feed */,
+				E0707BBD2B6737D5009CC347 /* Profile */,
 				E0707B9A2B66E636009CC347 /* Root */,
+				E0707BA92B67351B009CC347 /* TabBar */,
+				E0707BB42B673750009CC347 /* ThreadCreation */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -163,6 +181,102 @@
 				E0707BA72B671D08009CC347 /* FooterLinkView.swift */,
 			);
 			path = Subviews;
+			sourceTree = "<group>";
+		};
+		E0707BA92B67351B009CC347 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				E0707BBA2B6737B1009CC347 /* Views */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		E0707BAC2B67370D009CC347 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				E0707BAD2B673714009CC347 /* Views */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		E0707BAD2B673714009CC347 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E0707BAE2B67371B009CC347 /* FeedView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E0707BB02B673734009CC347 /* Explore */ = {
+			isa = PBXGroup;
+			children = (
+				E0707BB12B673738009CC347 /* Views */,
+			);
+			path = Explore;
+			sourceTree = "<group>";
+		};
+		E0707BB12B673738009CC347 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E0707BB22B67373F009CC347 /* ExploreView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E0707BB42B673750009CC347 /* ThreadCreation */ = {
+			isa = PBXGroup;
+			children = (
+				E0707BB52B673759009CC347 /* Views */,
+			);
+			path = ThreadCreation;
+			sourceTree = "<group>";
+		};
+		E0707BB52B673759009CC347 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E0707BB62B673760009CC347 /* CreateThreadView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E0707BB82B67377C009CC347 /* Activity */ = {
+			isa = PBXGroup;
+			children = (
+				E0707BB92B673784009CC347 /* Views */,
+			);
+			path = Activity;
+			sourceTree = "<group>";
+		};
+		E0707BB92B673784009CC347 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E0707BBB2B6737C2009CC347 /* ActivityView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E0707BBA2B6737B1009CC347 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E0707BAA2B673541009CC347 /* ThreadsTabView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E0707BBD2B6737D5009CC347 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				E0707BBE2B6737DC009CC347 /* Views */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		E0707BBE2B6737DC009CC347 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E0707BBF2B6737E3009CC347 /* ProfileView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,13 +349,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0707BB72B673760009CC347 /* CreateThreadView.swift in Sources */,
+				E0707BB32B67373F009CC347 /* ExploreView.swift in Sources */,
+				E0707BBC2B6737C2009CC347 /* ActivityView.swift in Sources */,
+				E0707BAF2B67371B009CC347 /* FeedView.swift in Sources */,
 				E0707BA82B671D08009CC347 /* FooterLinkView.swift in Sources */,
 				E0707B9D2B66E66B009CC347 /* LoginView.swift in Sources */,
 				E0707BA62B671C36009CC347 /* ActionButtonView.swift in Sources */,
 				E0707B9F2B67198F009CC347 /* ThreadsTFViewModifier.swift in Sources */,
 				E0707BA42B671BDE009CC347 /* AppIconView.swift in Sources */,
+				E0707BAB2B673541009CC347 /* ThreadsTabView.swift in Sources */,
 				E0707B882B66C97B009CC347 /* ContentView.swift in Sources */,
 				E0707B862B66C97B009CC347 /* ThreadsApp.swift in Sources */,
+				E0707BC02B6737E3009CC347 /* ProfileView.swift in Sources */,
 				E0707BA12B671B15009CC347 /* RegistrationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
