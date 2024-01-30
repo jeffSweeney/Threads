@@ -24,6 +24,8 @@
 		E0707BBC2B6737C2009CC347 /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0707BBB2B6737C2009CC347 /* ActivityView.swift */; };
 		E0707BC02B6737E3009CC347 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0707BBF2B6737E3009CC347 /* ProfileView.swift */; };
 		E0707BC22B67DD94009CC347 /* ThreadCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0707BC12B67DD94009CC347 /* ThreadCell.swift */; };
+		E0707BC52B68758A009CC347 /* CircularProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0707BC42B68758A009CC347 /* CircularProfileImageView.swift */; };
+		E0707BC82B687600009CC347 /* UserCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0707BC72B687600009CC347 /* UserCellView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +47,8 @@
 		E0707BBB2B6737C2009CC347 /* ActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityView.swift; sourceTree = "<group>"; };
 		E0707BBF2B6737E3009CC347 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		E0707BC12B67DD94009CC347 /* ThreadCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadCell.swift; sourceTree = "<group>"; };
+		E0707BC42B68758A009CC347 /* CircularProfileImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProfileImageView.swift; sourceTree = "<group>"; };
+		E0707BC72B687600009CC347 /* UserCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCellView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +135,7 @@
 			children = (
 				E0707BB82B67377C009CC347 /* Activity */,
 				E0707B992B66E62F009CC347 /* Authentication */,
+				E0707BC32B687577009CC347 /* Components */,
 				E0707BB02B673734009CC347 /* Explore */,
 				E0707BAC2B67370D009CC347 /* Feed */,
 				E0707BBD2B6737D5009CC347 /* Profile */,
@@ -282,6 +287,15 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		E0707BC32B687577009CC347 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				E0707BC42B68758A009CC347 /* CircularProfileImageView.swift */,
+				E0707BC72B687600009CC347 /* UserCellView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -364,7 +378,9 @@
 				E0707BAB2B673541009CC347 /* ThreadsTabView.swift in Sources */,
 				E0707B882B66C97B009CC347 /* ContentView.swift in Sources */,
 				E0707B862B66C97B009CC347 /* ThreadsApp.swift in Sources */,
+				E0707BC82B687600009CC347 /* UserCellView.swift in Sources */,
 				E0707BC22B67DD94009CC347 /* ThreadCell.swift in Sources */,
+				E0707BC52B68758A009CC347 /* CircularProfileImageView.swift in Sources */,
 				E0707BC02B6737E3009CC347 /* ProfileView.swift in Sources */,
 				E0707BA12B671B15009CC347 /* RegistrationView.swift in Sources */,
 			);
