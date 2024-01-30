@@ -26,6 +26,9 @@
 		E0707BC22B67DD94009CC347 /* ThreadCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0707BC12B67DD94009CC347 /* ThreadCell.swift */; };
 		E0707BC52B68758A009CC347 /* CircularProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0707BC42B68758A009CC347 /* CircularProfileImageView.swift */; };
 		E0707BC82B687600009CC347 /* UserCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0707BC72B687600009CC347 /* UserCellView.swift */; };
+		E0790D932B69B23E000826A0 /* ProfileThreadFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0790D922B69B23E000826A0 /* ProfileThreadFilter.swift */; };
+		E0790D972B69B329000826A0 /* LinkAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0790D962B69B329000826A0 /* LinkAction.swift */; };
+		E0790D992B69B355000826A0 /* ButtonAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0790D982B69B355000826A0 /* ButtonAction.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +52,9 @@
 		E0707BC12B67DD94009CC347 /* ThreadCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadCell.swift; sourceTree = "<group>"; };
 		E0707BC42B68758A009CC347 /* CircularProfileImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProfileImageView.swift; sourceTree = "<group>"; };
 		E0707BC72B687600009CC347 /* UserCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCellView.swift; sourceTree = "<group>"; };
+		E0790D922B69B23E000826A0 /* ProfileThreadFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileThreadFilter.swift; sourceTree = "<group>"; };
+		E0790D962B69B329000826A0 /* LinkAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkAction.swift; sourceTree = "<group>"; };
+		E0790D982B69B355000826A0 /* ButtonAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonAction.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +163,7 @@
 		E0707B992B66E62F009CC347 /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
+				E0790D952B69B313000826A0 /* Models */,
 				E0707B9B2B66E65A009CC347 /* Views */,
 			);
 			path = Authentication;
@@ -274,6 +281,7 @@
 		E0707BBD2B6737D5009CC347 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				E0790D942B69B248000826A0 /* Models */,
 				E0707BBE2B6737DC009CC347 /* Views */,
 			);
 			path = Profile;
@@ -294,6 +302,23 @@
 				E0707BC72B687600009CC347 /* UserCellView.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		E0790D942B69B248000826A0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E0790D922B69B23E000826A0 /* ProfileThreadFilter.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E0790D952B69B313000826A0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E0790D982B69B355000826A0 /* ButtonAction.swift */,
+				E0790D962B69B329000826A0 /* LinkAction.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -371,7 +396,9 @@
 				E0707BBC2B6737C2009CC347 /* ActivityView.swift in Sources */,
 				E0707BAF2B67371B009CC347 /* FeedView.swift in Sources */,
 				E0707BA82B671D08009CC347 /* FooterLinkView.swift in Sources */,
+				E0790D932B69B23E000826A0 /* ProfileThreadFilter.swift in Sources */,
 				E0707B9D2B66E66B009CC347 /* LoginView.swift in Sources */,
+				E0790D972B69B329000826A0 /* LinkAction.swift in Sources */,
 				E0707BA62B671C36009CC347 /* ActionButtonView.swift in Sources */,
 				E0707B9F2B67198F009CC347 /* ThreadsTFViewModifier.swift in Sources */,
 				E0707BA42B671BDE009CC347 /* AppIconView.swift in Sources */,
@@ -383,6 +410,7 @@
 				E0707BC52B68758A009CC347 /* CircularProfileImageView.swift in Sources */,
 				E0707BC02B6737E3009CC347 /* ProfileView.swift in Sources */,
 				E0707BA12B671B15009CC347 /* RegistrationView.swift in Sources */,
+				E0790D992B69B355000826A0 /* ButtonAction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

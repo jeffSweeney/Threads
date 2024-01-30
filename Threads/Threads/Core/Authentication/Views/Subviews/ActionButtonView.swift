@@ -7,20 +7,6 @@
 
 import SwiftUI
 
-enum ButtonAction {
-    case login
-    case signUp
-    
-    var title: String {
-        switch self {
-        case .login:
-            "Login"
-        case .signUp:
-            "Sign up"
-        }
-    }
-}
-
 struct ActionButtonView: View {
     let action: ButtonAction
     
