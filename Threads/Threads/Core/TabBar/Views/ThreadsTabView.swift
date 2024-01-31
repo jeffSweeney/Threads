@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct ThreadsTabView: View {
-    @State private var selectedTab = 0
+    static let DEFAULT_TAB = 0
+    @State private var selectedTab = DEFAULT_TAB
+    
     var body: some View {
         TabView(selection: $selectedTab) {
             FeedView()
@@ -26,7 +28,7 @@ struct ThreadsTabView: View {
                 .onAppear { selectedTab = 1 }
                 .tag(1)
             
-            CreateThreadView()
+            Text("") // Leaving "Empty" to enable the sheet display instead of full screen.
                 .tabItem {
                     Image(systemName: "plus")
                 }
@@ -49,6 +51,9 @@ struct ThreadsTabView: View {
                 .onAppear { selectedTab = 4 }
                 .tag(4)
         }
+        .sheet(isPresented: .constant(selectedTab == 2), onDismiss: { selectedTab = 0 }, content: {
+            CreateThreadView(tabIndex: $selectedTab)
+        })
         .tint(.black)
     }
 }
