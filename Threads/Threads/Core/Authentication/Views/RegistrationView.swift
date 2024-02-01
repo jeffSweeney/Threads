@@ -9,6 +9,7 @@ import SwiftUI
 
 struct RegistrationView: View {
     @StateObject var viewModel = RegistrationViewModel()
+    @State var showingPassword = false
     
     @Environment(\.dismiss) var dismiss
     
@@ -22,7 +23,8 @@ struct RegistrationView: View {
                 TextField("Enter your email", text: $viewModel.email)
                     .modifier(ThreadsTFViewModifier())
                 
-                TextField("Enter your password", text: $viewModel.password)
+                SecureField("Enter your password", text: $viewModel.password)
+                    .textInputAutocapitalization(.never)
                     .modifier(ThreadsTFViewModifier())
                 
                 TextField("Enter your full name", text: $viewModel.fullname)
