@@ -43,7 +43,7 @@ struct LoginView: View {
                 Button(action: {
                     
                 }, label: {
-                    ActionButtonView(action: .login)
+                    ActionButtonView(action: .login, actionable: true)
                 })
                 
                 

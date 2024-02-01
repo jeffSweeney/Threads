@@ -7,17 +7,34 @@
 
 import Foundation
 
+struct CreateUserError: Identifiable {
+    let id = UUID()
+    let error: String
+}
+
 class RegistrationViewModel: ObservableObject {
     @Published var email = ""
     @Published var password = ""
     @Published var fullname = ""
     @Published var username = ""
+    @Published var creationError: CreateUserError? = nil
     
     @MainActor
-    func createUser() async throws {
-        try await AuthService.shared.createUser(withEmail: email, 
-                                                password: password, 
-                                                fullname: fullname, 
-                                                username: username)
+    func createUser() async {
+        do {
+            try await AuthService.shared.createUser(withEmail: email,
+                                                    password: password,
+                                                    fullname: fullname,
+                                                    username: username)
+        } catch {
+            creationError = CreateUserError(error: error.localizedDescription)
+        }
+    }
+    
+    func signupEligible() -> Bool {
+        return !email.isEmpty
+                && !password.isEmpty
+                && !fullname.isEmpty
+                && !username.isEmpty
     }
 }

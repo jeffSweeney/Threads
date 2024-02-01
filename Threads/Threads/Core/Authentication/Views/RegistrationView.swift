@@ -33,11 +33,21 @@ struct RegistrationView: View {
             }
             
             Button(action: {
-                Task { try await viewModel.createUser() }
+                Task { await viewModel.createUser() }
             }, label: {
-                ActionButtonView(action: .signUp)
+                ActionButtonView(action: .signUp, actionable: viewModel.signupEligible())
                     .padding(.vertical)
             })
+            .disabled(!viewModel.signupEligible())
+            .alert("Create User Failed",
+                   isPresented: .constant(viewModel.creationError != nil),
+                   presenting: viewModel.creationError) { creationError in
+                Button("Retry") {
+                    viewModel.creationError = nil
+                }
+            } message: { creationError in
+                Text(creationError.error)
+            }
             
             Spacer()
             
