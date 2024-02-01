@@ -12,85 +12,98 @@ struct ProfileView: View {
     @Namespace var animation
     
     var body: some View {
-        ScrollView {
-            VStack(spacing: 20) {
-                HStack(alignment: .top) {
-                    VStack(alignment: .leading, spacing: 12) {
-                        VStack(alignment: .leading, spacing: 4) {
-                            Text("Jeff Sweeney")
-                                .font(.title2)
-                                .fontWeight(.semibold)
-                            
-                            Text("sweeney_jeff")
-                                .font(.subheadline)
-                        }
-                        
-                        Text("Aspiring pilot, current iOS developer!")
-                            .font(.footnote)
-                        
-                        Text("2 followers")
-                            .font(.caption)
-                            .foregroundStyle(.gray)
-                    }
-                    
-                    Spacer()
-                    
-                    CircularProfileImageView()
-                }
-                
-                Button(action: {
-                    print("TAPPED: Follow button")
-                }, label: {
-                    Text("Follow")
-                        .font(.subheadline)
-                        .fontWeight(.semibold)
-                        .foregroundStyle(.white)
-                        .frame(width: 352, height: 32)
-                        .background(.black)
-                        .clipShape(RoundedRectangle(cornerRadius: 8))
-                })
-                
-                VStack {
-                    HStack {
-                        ForEach(ProfileThreadFilter.allCases) { filter in
-                            VStack {
-                                Text(filter.title)
+        NavigationStack {
+            ScrollView {
+                VStack(spacing: 20) {
+                    HStack(alignment: .top) {
+                        VStack(alignment: .leading, spacing: 12) {
+                            VStack(alignment: .leading, spacing: 4) {
+                                Text("Jeff Sweeney")
+                                    .font(.title2)
+                                    .fontWeight(.semibold)
+                                
+                                Text("sweeney_jeff")
                                     .font(.subheadline)
-                                    .fontWeight(isSelectedFilter(filter) ? .semibold : .regular)
-                                
-                                if isSelectedFilter(filter) {
-                                    Rectangle()
-                                        .foregroundStyle(.black)
-                                        .frame(width: 180, height: 1)
-                                        .matchedGeometryEffect(id: "item", in: animation)
-                                } else {
-                                    Rectangle()
-                                        .foregroundStyle(.clear)
-                                        .frame(width: 180, height: 1)
-                                }
-                                
                             }
-                            .onTapGesture {
-                                withAnimation(.spring()) {
-                                    selectedFilter = filter
-                                }
-                            }
+                            
+                            Text("Aspiring pilot, current iOS developer!")
+                                .font(.footnote)
+                            
+                            Text("2 followers")
+                                .font(.caption)
+                                .foregroundStyle(.gray)
                         }
+                        
+                        Spacer()
+                        
+                        CircularProfileImageView()
                     }
                     
-                    if isSelectedFilter(.threads) {
-                        LazyVStack {
-                            ForEach(0 ... 10, id: \.self) { thread in
-                                ThreadCell()
+                    Button(action: {
+                        print("TAPPED: Follow button")
+                    }, label: {
+                        Text("Follow")
+                            .font(.subheadline)
+                            .fontWeight(.semibold)
+                            .foregroundStyle(.white)
+                            .frame(width: 352, height: 32)
+                            .background(.black)
+                            .clipShape(RoundedRectangle(cornerRadius: 8))
+                    })
+                    
+                    VStack {
+                        HStack {
+                            ForEach(ProfileThreadFilter.allCases) { filter in
+                                VStack {
+                                    Text(filter.title)
+                                        .font(.subheadline)
+                                        .fontWeight(isSelectedFilter(filter) ? .semibold : .regular)
+                                    
+                                    if isSelectedFilter(filter) {
+                                        Rectangle()
+                                            .foregroundStyle(.black)
+                                            .frame(width: 180, height: 1)
+                                            .matchedGeometryEffect(id: "item", in: animation)
+                                    } else {
+                                        Rectangle()
+                                            .foregroundStyle(.clear)
+                                            .frame(width: 180, height: 1)
+                                    }
+                                    
+                                }
+                                .onTapGesture {
+                                    withAnimation(.spring()) {
+                                        selectedFilter = filter
+                                    }
+                                }
+                            }
+                        }
+                        
+                        if isSelectedFilter(.threads) {
+                            LazyVStack {
+                                ForEach(0 ... 10, id: \.self) { thread in
+                                    ThreadCell()
+                                }
                             }
                         }
                     }
+                    .padding(.vertical, 8)
                 }
-                .padding(.vertical, 8)
+            }
+            .scrollIndicators(.hidden)
+            .padding(.horizontal)
+            .toolbar {
+                ToolbarItem(placement: .topBarTrailing) {
+                    Button {
+                        AuthService.shared.signout()
+                    } label: {
+                        Image(systemName: "line.3.horizontal")
+                            .foregroundStyle(.black)
+                    }
+
+                }
             }
         }
-        .scrollIndicators(.hidden)
-        .padding(.horizontal)
     }
 }
 
