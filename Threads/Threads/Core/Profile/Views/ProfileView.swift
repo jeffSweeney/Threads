@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ProfileView: View {
+    @StateObject private var viewModel = ProfileViewModel()
     @State private var selectedFilter: ProfileThreadFilter = .threads
     @Namespace var animation
     
@@ -18,7 +19,7 @@ struct ProfileView: View {
                     HStack(alignment: .top) {
                         VStack(alignment: .leading, spacing: 12) {
                             VStack(alignment: .leading, spacing: 4) {
-                                Text("Jeff Sweeney")
+                                Text(viewModel.currentUser?.fullname ?? "DEBUG: USER UNKNOWN")
                                     .font(.title2)
                                     .fontWeight(.semibold)
                                 
