@@ -38,6 +38,7 @@ class AuthService {
     }
 }
 
+// MARK: - Singleton
 extension AuthService {
     static let shared = AuthService()
 }
