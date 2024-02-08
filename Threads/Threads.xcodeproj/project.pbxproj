@@ -35,6 +35,9 @@
 		E0A93D7F2B6DBBE80037E2FF /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A93D7E2B6DBBE80037E2FF /* User.swift */; };
 		E0A93D812B6DBEAB0037E2FF /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A93D802B6DBEAB0037E2FF /* UserService.swift */; };
 		E0A93D842B6DC02F0037E2FF /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A93D832B6DC02F0037E2FF /* ProfileViewModel.swift */; };
+		E0A93D862B7507F10037E2FF /* Collections.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A93D852B7507F10037E2FF /* Collections.swift */; };
+		E0A93D892B750A1E0037E2FF /* ExploreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A93D882B750A1E0037E2FF /* ExploreViewModel.swift */; };
+		E0A93D8B2B750F640037E2FF /* User+MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A93D8A2B750F640037E2FF /* User+MockData.swift */; };
 		E0C115FB2B6B124D00C2EB96 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E0C115FA2B6B124D00C2EB96 /* GoogleService-Info.plist */; };
 		E0C115FE2B6B131400C2EB96 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = E0C115FD2B6B131400C2EB96 /* FirebaseAuth */; };
 		E0C116002B6B131400C2EB96 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = E0C115FF2B6B131400C2EB96 /* FirebaseFirestore */; };
@@ -74,6 +77,9 @@
 		E0A93D7E2B6DBBE80037E2FF /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		E0A93D802B6DBEAB0037E2FF /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		E0A93D832B6DC02F0037E2FF /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		E0A93D852B7507F10037E2FF /* Collections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collections.swift; sourceTree = "<group>"; };
+		E0A93D882B750A1E0037E2FF /* ExploreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewModel.swift; sourceTree = "<group>"; };
+		E0A93D8A2B750F640037E2FF /* User+MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+MockData.swift"; sourceTree = "<group>"; };
 		E0C115FA2B6B124D00C2EB96 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E0C116072B6B159800C2EB96 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
 		E0C116092B6B162C00C2EB96 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
@@ -154,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				E0A93D7E2B6DBBE80037E2FF /* User.swift */,
+				E0A93D852B7507F10037E2FF /* Collections.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -161,6 +168,7 @@
 		E0707B962B66E5F6009CC347 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				E0A93D8A2B750F640037E2FF /* User+MockData.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -257,6 +265,7 @@
 		E0707BB02B673734009CC347 /* Explore */ = {
 			isa = PBXGroup;
 			children = (
+				E0A93D872B750A050037E2FF /* ViewModels */,
 				E0707BB12B673738009CC347 /* Views */,
 			);
 			path = Explore;
@@ -395,6 +404,14 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		E0A93D872B750A050037E2FF /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				E0A93D882B750A1E0037E2FF /* ExploreViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		E0C116052B6B157100C2EB96 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
@@ -493,11 +510,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				E0A93D7F2B6DBBE80037E2FF /* User.swift in Sources */,
+				E0A93D8B2B750F640037E2FF /* User+MockData.swift in Sources */,
 				E0790D9D2B69C6BF000826A0 /* EditProfileView.swift in Sources */,
 				E0A93D812B6DBEAB0037E2FF /* UserService.swift in Sources */,
 				E0C1160A2B6B162C00C2EB96 /* AuthService.swift in Sources */,
 				E0C116082B6B159800C2EB96 /* RegistrationViewModel.swift in Sources */,
 				E0707BB72B673760009CC347 /* CreateThreadView.swift in Sources */,
+				E0A93D892B750A1E0037E2FF /* ExploreViewModel.swift in Sources */,
 				E0A93D842B6DC02F0037E2FF /* ProfileViewModel.swift in Sources */,
 				E0707BB32B67373F009CC347 /* ExploreView.swift in Sources */,
 				E0707BBC2B6737C2009CC347 /* ActivityView.swift in Sources */,
@@ -514,6 +533,7 @@
 				E0707BAB2B673541009CC347 /* ThreadsTabView.swift in Sources */,
 				E0707B882B66C97B009CC347 /* ContentView.swift in Sources */,
 				E0707B862B66C97B009CC347 /* ThreadsApp.swift in Sources */,
+				E0A93D862B7507F10037E2FF /* Collections.swift in Sources */,
 				E0707BC82B687600009CC347 /* UserCellView.swift in Sources */,
 				E0707BC22B67DD94009CC347 /* ThreadCell.swift in Sources */,
 				E0707BC52B68758A009CC347 /* CircularProfileImageView.swift in Sources */,
