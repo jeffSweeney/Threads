@@ -332,7 +332,6 @@
 				E0A93D8C2B7544440037E2FF /* CurrentUserProfile */,
 				E0790D9A2B69C6AA000826A0 /* EditProfile */,
 				E0790D942B69B248000826A0 /* Models */,
-				E0A93D822B6DC0210037E2FF /* ViewModel */,
 				E0707BBE2B6737DC009CC347 /* Views */,
 			);
 			path = Profile;
@@ -400,13 +399,6 @@
 			isa = PBXGroup;
 			children = (
 				E0A93D792B6BD0A90037E2FF /* ContentViewModel.swift */,
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		E0A93D822B6DC0210037E2FF /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
