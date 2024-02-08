@@ -25,6 +25,10 @@ class UserService {
         
         print("DEBUG: User is \(user.fullname)")
     }
+    
+    func reset() {
+        self.currentUser = nil
+    }
 }
 
 // MARK: - Singleton
